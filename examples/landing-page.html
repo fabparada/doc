@@ -34,10 +34,8 @@
   <link href="../assets/demo/demo.css" rel="stylesheet" />
   <link href="../assets/css/app.css" rel="stylesheet" />
 </head>
-
 <body class="landing-page sidebar-collapse" style="background-color: #fff;">
-
-  <nav class="navbar pt-0 mb-0 pb-5 navbar-transparent navbar-color-on-scroll navbar-expand-lg" style="background-color: #001C41 !important;" color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar border-0 pt-0 mb-0 pb-5 navbar-transparent navbar-color-on-scroll navbar-expand-lg" style="background-color: #001C41 !important;" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <div class="">
@@ -54,38 +52,42 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mt-4 ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class=" nav-link" data-toggle="dropdown">
+          <!-- <li class="dropdown nav-item">
+            <a href="#cont1" class="nav-link" style="text-transform: none; font-size: 15px;" data-toggle="dropdown">
                <u>Documentación</u>
             </a>
             <div class="dropdown-menu dropdown-with-icons">
               <a href="../index.html" class="dropdown-item">
                 <i class="material-icons">layers</i> All Components
               </a>
-              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+              <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" style="text-transform: none;" class="dropdown-item">
                 <i class="material-icons">content_paste</i> Documentation
               </a>
             </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" style="text-transform: none; font-size: 15px;" href="#cont1" onclick="scrollToDownload()">
+              <i class="material-icons"></i><u>Documentación</u>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+            <a class="nav-link" style="text-transform: none; font-size: 15px;" href="#cont2" onclick="scrollToDownload()">
               <i class="material-icons"></i><u>Registrarme</u>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
+            <a class="nav-link" style="text-transform: none; font-size: 15px;" rel="tooltip" title="" data-placement="bottom" href="#cont3" target="_blank" data-original-title="Follow us on Twitter">
               <u>Fechas</u>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+            <a class="nav-link" style="text-transform: none; font-size: 15px;" rel="tooltip" title="" data-placement="bottom" href="#cont4" target="_blank" data-original-title="Like us on Facebook">
               <u>Firma electrónica</u>
             </a>
           </li>
           <li class="nav-item">
-
-            <a class="nav-link py-2 px-3 bg-primary" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
-              <img class="mr-2 pb-1" src="../assets/img/claveunica.svg" alt=""> <u>Iniciar Sesión</u>
+            <a class="nav-link py-2 px-3 rounded-0" style="background-color: #0F69C4; font-size: 15px; text-transform: none;" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
+              <img class="mr-1 pb-1" src="../assets/img/claveunica.svg" alt=""> <u>Iniciar sesión</u>
             </a>
           </li>
         </ul>
@@ -95,120 +97,114 @@
   <div class="" style="background-color: #001C41 !important;" data-parallax="true" style="">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <h4 class="title h2 font-weight-light" style="font-family: roboto slab;">La nueva plataforma de</h4>
-          <h1 style="font-family: roboto slab;font-weight: 505 !important;" >Comunicaciones oficiales <br> del estado</h1>
+        <div class="col-md-8 pt-3">
+          <h4 class="title h2 mb-0 font-weight-light" style="font-family: roboto slab; color: #fff;">La nueva plataforma de</h4>
+          <h1 style="font-family: roboto slab;font-weight: 505 !important; color: #fff;" class="my-0">Comunicaciones oficiales <br> del estado</h1>
           <br>
-          <h6 style="font-family: roboto; text-transform: none;" class="h4">Aquí podrás cargar, visar, firmar electrónicamente, <br> enumerar y distribuir documentos.</h6>
-
+          <h6 style="font-family: roboto; text-transform: none; color: #fff;" class="h4 mt-0">Aquí podrás cargar, visar, firmar electrónicamente, <br> enumerar y distribuir documentos.</h6>
         </div>
-        <div class="col-md-4" style="border-style: dashed; border-radius: 50%; border-width: 4px; height:380px;">
+        <!-- <div class="col-md-4 d-md-none">
+          <div id="cont1" class="mx-auto my-5">
+            <a href="#"><i style="font-size: 40px " class="material-icons pb-1 text-light">expand_more</i></a>
+            <a class="text-white h4" href="#cont1"><u>Conoce más</u></a>
+          </div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font-size: 1em;position: absolute; top: 239px; left: -29px; right: 224px; box-shadow: none; text-transform: none;" target="_blank" class="btn bg-secondary rounded-0 btn-danger fixed-top btn-raised btn-lg">
+            <i class="fa pr-2 fa-play"></i> <u>Ve el video</u>
+          </a>
+        </div> -->
+        <div class="col-md-4 d-none d-md-block" style="border-style: dashed;color: #fff; border-radius: 50%; border-width: 4px; height:380px;">
             <img style="padding-top: 54px; padding-left: 38px;" src="../assets/img/circle-doc.png" alt="">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font-size: 1em;position: absolute; top: 239px; left: -29px; right: 224px;" target="_blank" class="btn bg-secondary btn-danger fixed-top text-capitalize btn-raised btn-lg">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="font-size: 1em;position: absolute; top: 239px; left: -29px; right: 224px; box-shadow: none; text-transform: none;" target="_blank" class="btn bg-secondary rounded-0 btn-danger fixed-top btn-raised btn-lg">
               <i class="fa pr-2 fa-play"></i> <u>Ve el video</u>
             </a>
         </div>
-        <div class="mx-auto my-5 d-inline-block" style="margin-bottom: 164px !important;">
-          <a href="#"><i style="font-size: 40px " class="material-icons text-light">expand_more</i></a>
-          <a class="text-white h4" href="#"><u>Conoce más</u></a>
+        <div id="cont1" class="mx-auto my-5 d-none d-md-inline-block" style="margin-bottom: 164px !important;">
+          <a href="#"><i style="font-size: 40px " class="material-icons pb-1 text-light">expand_more</i></a>
+          <a class="text-white h4" href="#cont1"><u>Conoce más</u></a>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div class="main main-raised">
-    <div class="container">
-      <div class="section text-center">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title">Let&apos;s talk product</h2>
-            <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
-          </div>
-        </div>
-
-      </div>
-      <div class="section text-center">
-        <h2 class="title">Here is our team</h2>
-
-      </div>
-
-    </div>
-  </div> -->
 <div class="container">
-  <div class="card py-5 mx-auto" style="top: -161px">
+  <div class="card py-5 top mb-0 mx-auto" style="top: -161px">
     <div class="card-body">
       <div class="row">
-        <div class="col-md-4">
-          <p class="h3"> ¿Qué documentos se <br> pueden tramitar en <br> Doc.Digital? </p>
+        <div class="col-md-4 pl-5 pr-0">
+          <p class="h3" style="font-weight: bold; font-size: 31px; font-family: roboto slab;"> ¿Qué documentos se <br> pueden tramitar en <br> Doc.Digital? </p>
+        </div>
+        <div class="col-md-2 ">
+            <img class="d-block pt-4 mx-auto" src="../assets/img/paper-pen.svg" alt="">
+          <p class="h4 text-center" style="font-weight: 400;">Cartas</p>
         </div>
         <div class="col-md-2">
-          <img class="pt-4" src="../assets/img/paper-pen.svg" alt="">
+            <img class="d-block pt-4 mx-auto" src="../assets/img/doc.svg" alt="">
+            <p class="h4 text-center" style="font-weight: 400;">Circulares</p>
         </div>
         <div class="col-md-2">
-            <img class="pt-4" src="../assets/img/doc.svg" alt="">
+                <img class="d-block pt-4 mx-auto" src="../assets/img/doc-write.svg" alt="">
+                <p class="h4 text-center" style="font-weight: 400;">Memorandos</p>
         </div>
         <div class="col-md-2">
-                <img class="pt-4" src="../assets/img/doc-write.svg" alt="">
-        </div>
-        <div class="col-md-2">
-            <img class="pt-4" src="../assets/img/clip.svg" alt="">
+            <img class="d-block pt-4 mx-auto" src="../assets/img/clip.svg" alt="">
+            <p class="h4 text-center" style="font-weight: 400;">Oficios</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 <div class="container mb-5">
-    <div class="row">
-      <div class="col-md-4">
+    <div class="row mx-4">
+      <div class="col-md-4 pb-5">
         <img src="../assets/img/img.png" alt="">
       </div>
       <div class="col-md-8">
-        <p class="h2">Lo qué debes saber sobre Doc.Digital</p>
-        <p class="h4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br> Aenean commodo ligula eget dolor.</p>
-        <a href="#" class="btn"><u>Revisar Instructivo</u></a>
+        <p class="pb-3 h2" style="font-family: roboto slab; font-size: 39px; color: #373737; font-weight: 600;">Lo qué debes saber sobre Doc.Digital</p>
+        <p class="h4" style="font-weight: 400">Encuentra aquí la documentación actualizada para aprender a usar Doc.Digital.</p>
+        <a href="#" class="btn btn-secondary btn-lg border border-dark bg-white rounded-0 " style="text-transform: none; font-size: 1em;" ><u>Revisar documentación</u></a>
       </div>
     </div>
 </div>
 <div class="container-fluid pb-5" style="background-color: #FCF9E9;">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 mb-5">
-          <p class="h2 text-center">¿Cómo puedo registrarme?</p>
+      <div id="cont2" class="row">
+        <div class="col-md-12 pt-4 mb-5">
+          <p class="h2 text-center" style="font-weight: 600; font-family: roboto slab;">¿Cómo puedo registrarme?</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 pb-5">
           <div class="media">
             <img class="mr-3" src="../assets/img/edificio.svg" alt="Generic placeholder image">
             <div class="media-body">
-              <h5 class="mt-0">Media heading</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              <h5 class="mt-0 h3" style="font-weight: 600; font-family: roboto slab;">Oficina de partes</h5>
+              <h4 style="font-weight: 400;">El usuario de administración de su institución debe registrar a los usuarios de Oficina de partes en Doc.Digital.</h4>
+              <a href="#" style="text-transform: none; font-size: 1em; background-color: #FCF9E9;" class="btn btn-secondary btn-lg border border-dark rounded-0"><u>Comenzar Registro</u></a>
             </div>
           </div>
-
         </div>
         <div class="col-md-6">
           <div class="media">
-            <img class="mr-3" src="../assets/img/edificio.svg" alt="Generic placeholder image">
+            <img class="mr-3" src="../assets/img/woman.svg" alt="Generic placeholder image">
             <div class="media-body">
-              <h5 class="mt-0">Media heading</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              <h5 class="h3 mt-0"  style="font-weight: 600; font-family: roboto slab;">Funcionario</h5>
+              <h4 style="font-weight: 400;">Los usuarios deben completar un formulario de registro y el usuario administrador debe darlo de alta en Doc.Digital.</h4>
+              <a href="#"  style="text-transform: none; font-size: 1em; background-color: #FCF9E9;" class="btn btn-secondary btn-lg border border-dark rounded-0" ><u>Próximamente</u></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
 </div>
 <div class="container-fluid mt-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 ">
-        <p class="h2">Próximos<br>acontecimientos </p>
+      <div id="cont3" class="col-md-4 ">
+        <p style="font-family: roboto slab; font-weight:600;" class="h2">Próximos<br>acontecimientos </p>
       </div>
       <div class="col-md-8 mt-4">
         <div class="media">
-          <img class="mr-3" src="../assets/img/edificio.svg" alt="Generic placeholder image">
-          <div class="border-left pl-4 media-body">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h2 class="mr-3 h1 font-weight-bold" style="font-family: roboto slab;"> 22 <p style="margin-top: -24px; font-family: roboto;">de Julio</p></h2>
+          <div class="border-left border-dark pl-4 media-body">
+            <!-- <h5 class="mt-0">Media heading</h5> -->
+            <h4 class="pt-3 pb-4" style="font-weight:400; color:#373737; font-family:roboto;"><b>Inicio fase de habilitación de oficina de partes:</b> El usuario administrador debe registrar a los usuarios de Oficina de partes para recibir documentación.</h4>
           </div>
         </div>
       </div>
@@ -216,41 +212,42 @@
       </div>
       <div class="col-md-8 mt-4">
         <div class="media">
-          <img class="mr-3" src="../assets/img/edificio.svg" alt="Generic placeholder image">
-          <div class="media-body border-left pl-4">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            <h2 class="mr-3 h1 font-weight-bold" style="font-family: roboto slab;"> 2 <p style="margin-top: -24px; font-family: roboto;">de agosto</p> </h2>
+
+          <div class="media-body border-left border-dark pl-4">
+            <!-- <h5 class="mt-0">Media heading</h5> -->
+            <h4 style="font-weight:400; color:#373737; font-family:roboto;"><b>Primer módulo de consultas.</b> Invitados: Coordinadores de transformación digital. Podrán registrarse en <a style="color: #0F69C4;" href="#"><u>este formulario</u></a> en el que ingresarán preguntas a responder durante la sesión.</h4>
           </div>
         </div>
       </div>
       <div class="col-md-4">
       </div>
-      <div class="col-md-8 mt-4">
+      <div class="col-md-8 mt-4 pb-5">
         <div class="media">
-          <img class="mr-3" src="../assets/img/edificio.svg" alt="Generic placeholder image">
-          <div class="media-body border-left pl-4">
-            <h5 class="mt-0">Media heading</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h2 class="mr-3 h1 font-weight-bold" style="font-family: roboto slab;"> 9 <p style="margin-top: -24px; font-family: roboto;">de agosto</p> </h2>
+          <div class="media-body border-left border-dark pl-4">
+            <!-- <h5 style="font-weight:500; font-family:roboto;" class="mt-0">Media heading</h5> -->
+            <h4 style="font-weight:400; color:#373737; font-family:roboto;"><b>Segundo módulo de consultas.</b> Invitados: Usuarios de Oficina de partes. Podrán registrarse en <a style="color: #0F69C4;" href="#"><u>este formulario</u></a> en el que ingresarán preguntas a responder durante la sesión.</h4>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
 <div class="container-fluid" style="background-color: #EEEEEE;">
-  <div class="row py-5">
-      <div class="col-md-4">
-        <p class="h2">¿Qué es Firma <br> Electrónica?</p>
-      </div>
-      <div class="col-md-8 pt-3">
-        <p class="h5">Es cualquier sonido, símbolo o proceso electrónico, que permite al receptor de un documento electrónico identificar formalmente a su autor. <br><br>
-  Para más información pincha aquí</p>
-      </div>
+  <div class="container">
+    <div id="cont4" class="row py-5">
+        <div class="col-md-4">
+          <p style="font-family:roboto slab; font-weight:600;" class="h2">¿Qué es Firma <br> Electrónica?</p>
+        </div>
+        <div class="col-md-8 pt-3">
+          <p style="color: #001C41; font-weight:400; font-family:roboto;" class="h4">Es cualquier sonido, símbolo o proceso electrónico, que permite al receptor de un documento electrónico identificar formalmente a su autor. <br><br>
+    Para más información pincha <a style="color: #0F69C4;" href="#"><u>aquí</u></a></p>
+        </div>
+    </div>
   </div>
 </div>
-
-  <div class="container-fluid py-5" style="background-color: #062A4E;">
+  <div class="container-fluid px-5 py-5" style="background-color: #062A4E;">
       <div class="row">
         <div class="col-md-12">
           <img src="../assets/img/Group75.svg" alt="">
@@ -258,23 +255,24 @@
         </div>
       </div>
   </div>
-<div class="container-fluid pt-5" style="background-color: #001C41;">
+<div class="container-fluid pt-4" style="background-color: #001C41;">
     <div class="row">
-
-       <div class="col-md-12">
-
+       <div class="col-md-12 px-5">
          <p class="text-light"><img src="../assets/img/cc.png" alt="">&nbsp&nbsp A menos que se indique lo contrario, el contenido en Lorem ipsum está bajo una licencia Creative Commons 3.0 (CC BY 3.0 CL)</p>
             <img src="../assets/img/bar.png" charset="utf-8"></img>
        </div>
     </div>
 </div>
-
-
-
-
   <!--   Core JS Files   -->
+
+
   <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <!-- scroll effects -->
+  <script src="../assets/js/smooth-scroll.polyfills.min.js" type="text/javascript"></script>
+  <script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+  </script>
   <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
   <script src="../assets/js/plugins/moment.min.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->

@@ -4,3 +4,8 @@
 .header-filter::before{
   background: 0;
 }
+@media (max-width: 992px) {
+  .top {
+    top: -27px !important;
+  }
+}
