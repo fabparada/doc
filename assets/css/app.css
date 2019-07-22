@@ -9,3 +9,9 @@
     top: -27px !important;
   }
 }
+
+@media (max-width: 992px) {
+  .nav-mobile {
+    display: contents !important;
+  }
+}
